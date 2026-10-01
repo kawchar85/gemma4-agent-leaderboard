@@ -4,7 +4,6 @@ from __future__ import annotations
 import csv
 import json
 import os
-import shutil
 import subprocess
 import tempfile
 import zipfile
@@ -33,12 +32,10 @@ def parse_dt(value: str | None) -> datetime | None:
     if not value:
         return None
 
-    candidates = [value, value.replace(" ", "T", 1)]
-    for candidate in candidates:
+    for candidate in (value, value.replace(" ", "T", 1)):
         try:
-            if candidate.endswith("Z"):
-                candidate = candidate[:-1] + "+00:00"
-            dt = datetime.fromisoformat(candidate)
+            normalized = candidate[:-1] + "+00:00" if candidate.endswith("Z") else candidate
+            dt = datetime.fromisoformat(normalized)
             if dt.tzinfo is None:
                 dt = dt.replace(tzinfo=timezone.utc)
             return dt.astimezone(timezone.utc)
@@ -73,12 +70,7 @@ def maybe_number(value: str) -> int | float | str | None:
 
 
 def prepare_legacy_kaggle_json() -> None:
-    """Support a secret containing the legacy kaggle.json document.
-
-    Modern Kaggle CLI versions can consume KAGGLE_API_TOKEN directly. Some users
-    store the entire old-style kaggle.json document in the secret instead; when
-    that is detected we materialize it for the CLI.
-    """
+    """Also support a secret containing an old-style kaggle.json document."""
     token = os.getenv("KAGGLE_API_TOKEN", "").strip()
     if not token.startswith("{"):
         return
@@ -101,16 +93,19 @@ def download_leaderboard() -> list[dict[str, str]]:
 
     with tempfile.TemporaryDirectory(prefix="gemma4-leaderboard-") as tmp:
         tmp_path = Path(tmp)
-        cmd = [
-            "kaggle",
-            "competitions",
-            "leaderboard",
-            COMPETITION,
-            "--download",
-            "--path",
-            str(tmp_path),
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True)
+        result = subprocess.run(
+            [
+                "kaggle",
+                "competitions",
+                "leaderboard",
+                COMPETITION,
+                "--download",
+                "--path",
+                str(tmp_path),
+            ],
+            capture_output=True,
+            text=True,
+        )
         if result.returncode != 0:
             raise RuntimeError(
                 "Kaggle leaderboard download failed:\n"
@@ -138,9 +133,16 @@ def load_state() -> dict[str, Any]:
     return json.loads(STATE_PATH.read_text())
 
 
+def load_public() -> dict[str, Any] | None:
+    if not PUBLIC_PATH.exists():
+        return None
+    try:
+        return json.loads(PUBLIC_PATH.read_text())
+    except json.JSONDecodeError:
+        return None
+
+
 def event_key(row: dict[str, Any]) -> str:
-    # Submission timestamp is the best public identifier. The fallback keeps the
-    # tracker useful if Kaggle changes the downloaded CSV schema.
     if row["submitted_at"]:
         return f"submitted:{row['submitted_at']}"
     return f"fallback:{row['submission_count']}:{row['score']}"
@@ -185,9 +187,9 @@ def normalize(rows: list[dict[str, str]]) -> list[dict[str, Any]]:
 
 def main() -> None:
     now = utc_now()
-    raw_rows = download_leaderboard()
-    current = normalize(raw_rows)
+    current = normalize(download_leaderboard())
     state = load_state()
+    previous_public = load_public()
 
     initial_snapshot = not bool(state.get("tracking_started_at"))
     if initial_snapshot:
@@ -199,16 +201,14 @@ def main() -> None:
     for row in current:
         team_events = events.setdefault(row["team_id"], [])
         key = event_key(row)
-        existing = next((e for e in team_events if e.get("key") == key), None)
+        existing = next((event for event in team_events if event.get("key") == key), None)
 
         if existing is None:
             observed_minutes: int | None = None
             if not initial_snapshot:
                 submitted_dt = parse_dt(row.get("submitted_at"))
                 if submitted_dt is not None:
-                    observed_minutes = max(
-                        0, int((now - submitted_dt).total_seconds() // 60)
-                    )
+                    observed_minutes = max(0, int((now - submitted_dt).total_seconds() // 60))
 
             existing = {
                 "key": key,
@@ -217,27 +217,32 @@ def main() -> None:
                 "observed_minutes": observed_minutes,
                 "baseline": initial_snapshot,
                 "score": row.get("score"),
-                "rank": row.get("rank"),
+                "rank_when_observed": row.get("rank"),
                 "submission_count": row.get("submission_count"),
             }
             team_events.append(existing)
             new_events += 1
-        else:
-            # Keep first_seen_at/observed_minutes immutable, but retain the latest
-            # public score/rank in case Kaggle republishes leaderboard metadata.
-            existing["score"] = row.get("score")
-            existing["rank"] = row.get("rank")
-            existing["submission_count"] = row.get("submission_count")
 
         row["first_seen_at"] = existing.get("first_seen_at")
         row["observed_minutes"] = existing.get("observed_minutes")
         row["baseline"] = existing.get("baseline", False)
 
     for team_events in events.values():
-        team_events.sort(key=lambda e: e.get("first_seen_at") or "")
+        team_events.sort(key=lambda event: event.get("first_seen_at") or "")
+
+    # Avoid 288 no-op commits/day. Only persist when the public leaderboard/history
+    # meaningfully changes. The workflow still polls every five minutes.
+    if (
+        not initial_snapshot
+        and previous_public is not None
+        and previous_public.get("leaderboard") == current
+        and previous_public.get("history") == events
+    ):
+        print(f"Polled {len(current)} teams; no leaderboard changes.")
+        return
 
     state["competition"] = COMPETITION
-    state["last_polled_at"] = iso(now)
+    state["last_change_observed_at"] = iso(now)
     state["events"] = events
 
     tracked_events = [
@@ -262,7 +267,7 @@ def main() -> None:
             "team_count": len(current),
             "tracked_event_count": len(tracked_events),
             "observed_event_count": len(observed_values),
-            "new_events_this_poll": new_events,
+            "new_events_last_update": new_events,
             "measurement": (
                 "Observed Time = first poll that sees a leaderboard result minus "
                 "Kaggle's public submission timestamp. It is not exact execution runtime."
