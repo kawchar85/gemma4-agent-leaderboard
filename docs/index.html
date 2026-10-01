@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Community tracker for the Google Gemma 4 Developer Agent Competition." />
   <title>Gemma 4 Agent Leaderboard</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=3" />
 </head>
 <body>
   <header class="site-header">
     <div class="shell header-inner">
       <a class="brand" href="./">Gemma 4 Agent Tracker</a>
-      <nav>
+      <nav aria-label="External links">
         <a href="https://www.kaggle.com/competitions/gemma-4-developer-agent/leaderboard" target="_blank" rel="noreferrer">Kaggle</a>
         <a href="https://github.com/kawchar85/gemma4-agent-leaderboard" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
@@ -22,22 +22,39 @@
     <section class="intro">
       <h1>Gemma 4 Agent Leaderboard</h1>
       <p>Community tracker for the Google – The Gemma 4 Developer Agent Competition.</p>
+      <p class="summary" id="summary">Tracker initializing…</p>
     </section>
 
-    <section class="stats" id="stats" aria-label="Tracker summary">
-      <div><span>Teams</span><strong id="teamCount">—</strong></div>
-      <div><span>Tracked submissions</span><strong id="eventCount">—</strong></div>
-      <div><span>Median observed time</span><strong id="medianTime">—</strong></div>
-      <div><span>Last update</span><strong id="lastUpdate">—</strong></div>
-    </section>
-
-    <section class="section-block">
+    <section class="section-block recent-section">
       <div class="section-head">
+        <div>
+          <h2>Recent submissions</h2>
+          <p>Latest 10 leaderboard changes observed after tracking began.</p>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Team</th>
+              <th>Score</th>
+              <th>Submitted</th>
+              <th>Observed time</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section-block leaderboard-section">
+      <div class="section-head leaderboard-head">
         <div>
           <h2>Leaderboard</h2>
           <p>Current public leaderboard state.</p>
         </div>
-        <input id="search" type="search" placeholder="Filter teams" autocomplete="off" aria-label="Filter teams" />
+        <input id="search" type="search" placeholder="Search teams" autocomplete="off" aria-label="Search teams" />
       </div>
 
       <div class="table-wrap">
@@ -55,35 +72,16 @@
           <tbody id="leaderboardBody"></tbody>
         </table>
       </div>
-    </section>
 
-    <section class="section-block history-section">
-      <div class="section-head">
-        <div>
-          <h2>Recent submissions</h2>
-          <p>Leaderboard changes observed after tracking began.</p>
-        </div>
-      </div>
-
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>First seen</th>
-              <th>Team</th>
-              <th>Score</th>
-              <th>Submitted</th>
-              <th>Observed time</th>
-            </tr>
-          </thead>
-          <tbody id="historyBody"></tbody>
-        </table>
+      <div class="pagination" id="pagination" aria-label="Leaderboard pagination">
+        <button id="prevPage" type="button">Previous</button>
+        <span id="pageInfo">Page 1 of 1</span>
+        <button id="nextPage" type="button">Next</button>
       </div>
     </section>
 
     <aside class="method-note">
-      <strong>About observed time.</strong>
-      It is measured from Kaggle's public submission timestamp to the first tracker poll that sees the resulting leaderboard state. It is not exact execution runtime. Failed, timed-out, private, or otherwise non-public submissions may not appear.
+      <strong>Observed time</strong> is measured from Kaggle's public submission timestamp to the first tracker poll that sees the resulting leaderboard state. It is not exact execution runtime. Failed, timed-out, private, or otherwise non-public submissions may not appear.
     </aside>
 
     <footer>
@@ -92,6 +90,6 @@
     </footer>
   </main>
 
-  <script src="app.js" defer></script>
+  <script src="app.js?v=3" defer></script>
 </body>
 </html>
