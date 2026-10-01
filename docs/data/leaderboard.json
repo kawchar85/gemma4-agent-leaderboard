@@ -1,0 +1,16 @@
+{
+  "meta": {
+    "schema_version": 1,
+    "competition": "gemma-4-developer-agent",
+    "updated_at": null,
+    "tracking_started_at": null,
+    "poll_interval_minutes": 5,
+    "team_count": 0,
+    "tracked_event_count": 0,
+    "observed_event_count": 0,
+    "new_events_this_poll": 0,
+    "measurement": "Observed Time = first poll that sees a leaderboard result minus Kaggle's public submission timestamp. It is not exact execution runtime."
+  },
+  "leaderboard": [],
+  "history": {}
+}
