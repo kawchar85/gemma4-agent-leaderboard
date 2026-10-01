@@ -1,7 +1,11 @@
 const DATA_URL = "data/leaderboard.json";
+const PAGE_SIZE = 50;
+const RECENT_LIMIT = 10;
 
 const $ = (id) => document.getElementById(id);
 let data = null;
+let currentPage = 1;
+let currentQuery = "";
 
 function formatDuration(minutes) {
   if (minutes === null || minutes === undefined || Number.isNaN(Number(minutes))) return "—";
@@ -27,6 +31,20 @@ function formatDate(value) {
   }).format(date);
 }
 
+function relativeTime(value) {
+  if (!value) return "—";
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return "—";
+  const seconds = Math.max(0, Math.round((Date.now() - date.getTime()) / 1000));
+  if (seconds < 60) return "just now";
+  const minutes = Math.floor(seconds / 60);
+  if (minutes < 60) return `${minutes} min ago`;
+  const hours = Math.floor(minutes / 60);
+  if (hours < 24) return `${hours}h ago`;
+  const days = Math.floor(hours / 24);
+  return `${days}d ago`;
+}
+
 function cell(value, className = "") {
   const td = document.createElement("td");
   td.textContent = value ?? "—";
@@ -43,28 +61,43 @@ function median(values) {
     : Math.round((sorted[mid - 1] + sorted[mid]) / 2);
 }
 
-function renderStats() {
-  const events = Object.values(data.history || {})
+function trackedEvents() {
+  return Object.values(data.history || {})
     .flat()
-    .filter((event) => !event.baseline && event.observed_minutes !== null && event.observed_minutes !== undefined);
+    .filter((event) => !event.baseline);
+}
 
-  $("teamCount").textContent = data.meta?.team_count ?? data.leaderboard?.length ?? 0;
-  $("eventCount").textContent = data.meta?.tracked_event_count ?? events.length;
-  $("medianTime").textContent = formatDuration(median(events.map((event) => Number(event.observed_minutes))));
-  $("lastUpdate").textContent = formatDate(data.meta?.updated_at);
+function renderSummary() {
+  const observed = trackedEvents().filter(
+    (event) => event.observed_minutes !== null && event.observed_minutes !== undefined
+  );
+  const medianMinutes = median(observed.map((event) => Number(event.observed_minutes)));
+  const count = data.meta?.tracked_event_count ?? trackedEvents().length;
+  const updated = relativeTime(data.meta?.updated_at);
+
+  const medianText = medianMinutes === null ? "Median observed time: —" : `Median observed time: ${formatDuration(medianMinutes)}`;
+  const trackedText = `${count} tracked submission${count === 1 ? "" : "s"}`;
+  $("summary").textContent = `${medianText} · ${trackedText} · Updated ${updated}`;
+
   $("trackingSince").textContent = data.meta?.tracking_started_at
     ? `Tracking since ${formatDate(data.meta.tracking_started_at)}`
     : "Tracker initializing…";
 }
 
-function renderLeaderboard(query = "") {
-  const body = $("leaderboardBody");
-  body.replaceChildren();
-  const needle = query.trim().toLowerCase();
-
-  const rows = (data.leaderboard || []).filter((row) =>
+function filteredLeaderboard() {
+  const needle = currentQuery.trim().toLowerCase();
+  return (data.leaderboard || []).filter((row) =>
     !needle || String(row.team_name || "").toLowerCase().includes(needle)
   );
+}
+
+function renderLeaderboard() {
+  const body = $("leaderboardBody");
+  body.replaceChildren();
+
+  const rows = filteredLeaderboard();
+  const totalPages = Math.max(1, Math.ceil(rows.length / PAGE_SIZE));
+  currentPage = Math.min(Math.max(1, currentPage), totalPages);
 
   if (!rows.length) {
     const tr = document.createElement("tr");
@@ -72,21 +105,26 @@ function renderLeaderboard(query = "") {
     td.colSpan = 6;
     tr.append(td);
     body.append(tr);
-    return;
+  } else {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    for (const row of rows.slice(start, start + PAGE_SIZE)) {
+      const tr = document.createElement("tr");
+      tr.append(
+        cell(row.rank, "rank"),
+        cell(row.team_name, "team"),
+        cell(row.score, "score"),
+        cell(row.submission_count),
+        cell(formatDate(row.submitted_at)),
+        cell(row.baseline ? "Baseline" : formatDuration(row.observed_minutes), row.baseline ? "muted" : "duration")
+      );
+      body.append(tr);
+    }
   }
 
-  for (const row of rows) {
-    const tr = document.createElement("tr");
-    tr.append(
-      cell(row.rank, "rank"),
-      cell(row.team_name, "team"),
-      cell(row.score, "score"),
-      cell(row.submission_count),
-      cell(formatDate(row.submitted_at)),
-      cell(row.baseline ? "Baseline" : formatDuration(row.observed_minutes), row.baseline ? "muted" : "duration")
-    );
-    body.append(tr);
-  }
+  $("pageInfo").textContent = `Page ${currentPage} of ${totalPages}`;
+  $("prevPage").disabled = currentPage <= 1;
+  $("nextPage").disabled = currentPage >= totalPages;
+  $("pagination").hidden = rows.length <= PAGE_SIZE;
 }
 
 function renderHistory() {
@@ -106,17 +144,16 @@ function renderHistory() {
 
   if (!events.length) {
     const tr = document.createElement("tr");
-    const td = cell("No post-baseline submissions observed yet.", "empty");
-    td.colSpan = 5;
+    const td = cell("No tracked submissions yet.", "empty");
+    td.colSpan = 4;
     tr.append(td);
     body.append(tr);
     return;
   }
 
-  for (const event of events.slice(0, 100)) {
+  for (const event of events.slice(0, RECENT_LIMIT)) {
     const tr = document.createElement("tr");
     tr.append(
-      cell(formatDate(event.first_seen_at)),
       cell(event.teamName, "team"),
       cell(event.score, "score"),
       cell(formatDate(event.submitted_at)),
@@ -131,13 +168,37 @@ async function init() {
     const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
     if (!response.ok) throw new Error(`HTTP ${response.status}`);
     data = await response.json();
-    renderStats();
-    renderLeaderboard();
+
+    renderSummary();
     renderHistory();
-    $("search").addEventListener("input", (event) => renderLeaderboard(event.target.value));
+    renderLeaderboard();
+
+    $("search").addEventListener("input", (event) => {
+      currentQuery = event.target.value;
+      currentPage = 1;
+      renderLeaderboard();
+    });
+
+    $("prevPage").addEventListener("click", () => {
+      if (currentPage > 1) {
+        currentPage -= 1;
+        renderLeaderboard();
+      }
+    });
+
+    $("nextPage").addEventListener("click", () => {
+      const totalPages = Math.max(1, Math.ceil(filteredLeaderboard().length / PAGE_SIZE));
+      if (currentPage < totalPages) {
+        currentPage += 1;
+        renderLeaderboard();
+      }
+    });
   } catch (error) {
     console.error(error);
+    $("summary").textContent = "Unable to load tracker data.";
+    $("historyBody").innerHTML = '<tr><td colspan="4" class="empty">Unable to load recent submissions.</td></tr>';
     $("leaderboardBody").innerHTML = '<tr><td colspan="6" class="empty">Unable to load leaderboard data.</td></tr>';
+    $("pagination").hidden = true;
   }
 }
 
