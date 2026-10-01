@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Community tracker for the Google Gemma 4 Developer Agent Competition." />
+  <title>Gemma 4 Agent Leaderboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Kaggle Community Tracker</p>
+        <h1>Gemma 4 Agent Leaderboard</h1>
+        <p class="subtitle">Public score, rank, submission history, and observed scoring time for the Google – The Gemma 4 Developer Agent Competition.</p>
+      </div>
+      <div class="hero-links">
+        <a href="https://www.kaggle.com/competitions/gemma-4-developer-agent/leaderboard" target="_blank" rel="noreferrer">Kaggle leaderboard</a>
+        <a href="https://github.com/kawchar85/gemma4-agent-leaderboard" target="_blank" rel="noreferrer">GitHub</a>
+      </div>
+    </header>
+
+    <section class="notice">
+      <strong>Observed Time is not exact execution runtime.</strong>
+      It is the time between Kaggle's public submission timestamp and the first tracker poll that sees the leaderboard result. Failed, timed-out, private, or otherwise non-public submissions may not appear.
+    </section>
+
+    <section class="stats" id="stats">
+      <article><span>Teams</span><strong id="teamCount">—</strong></article>
+      <article><span>Tracked submissions</span><strong id="eventCount">—</strong></article>
+      <article><span>Median observed time</span><strong id="medianTime">—</strong></article>
+      <article><span>Last leaderboard change</span><strong id="lastUpdate">—</strong></article>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Current leaderboard</h2>
+          <p>Leaderboard-visible submissions only.</p>
+        </div>
+        <input id="search" type="search" placeholder="Search team…" autocomplete="off" />
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>Score</th>
+              <th>Submissions</th>
+              <th>Submitted</th>
+              <th>Observed Time</th>
+            </tr>
+          </thead>
+          <tbody id="leaderboardBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-head">
+        <div>
+          <h2>Recently tracked submissions</h2>
+          <p>Only events observed after this tracker started are assigned a time.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>First seen</th>
+              <th>Team</th>
+              <th>Score</th>
+              <th>Submitted</th>
+              <th>Observed Time</th>
+            </tr>
+          </thead>
+          <tbody id="historyBody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer>
+      <span id="trackingSince">Tracker initializing…</span>
+      <span>Built from public Kaggle leaderboard data.</span>
+    </footer>
+  </main>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
