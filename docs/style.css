@@ -178,6 +178,27 @@ tbody tr:hover { background: #fafafa; }
 .muted { color: var(--muted); }
 .empty { text-align: center; color: var(--muted); padding: 24px; }
 
+.team-link {
+  appearance: none;
+  border: 0;
+  border-bottom: 1px dotted #9aa0a6;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-weight: 500;
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.team-link:hover,
+.team-link:focus-visible {
+  color: var(--link);
+  border-bottom-color: var(--link);
+  outline: none;
+}
+
 .pagination {
   display: flex;
   justify-content: flex-end;
@@ -226,6 +247,73 @@ footer {
   font-size: 11px;
 }
 
+.team-dialog {
+  width: min(760px, calc(100% - 24px));
+  max-height: min(82vh, 720px);
+  padding: 0;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--surface);
+  color: var(--text);
+  box-shadow: 0 16px 48px rgba(60, 64, 67, .22);
+}
+
+.team-dialog::backdrop {
+  background: rgba(32, 33, 36, .38);
+}
+
+.dialog-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.dialog-head h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.dialog-head p {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  font-variant-numeric: tabular-nums;
+}
+
+.dialog-close {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  padding: 0 2px;
+  font: inherit;
+  font-size: 24px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.dialog-close:hover { color: var(--text); }
+
+.dialog-content {
+  padding: 14px 20px 20px;
+  overflow: auto;
+}
+
+.dialog-note {
+  margin: 0 0 12px;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.team-history-table {
+  min-width: 620px;
+}
+
 @media (max-width: 760px) {
   .shell { width: min(100% - 20px, 1180px); }
   .main-content { padding-top: 20px; }
@@ -235,4 +323,17 @@ footer {
   input[type="search"] { width: 100%; }
   .pagination { justify-content: space-between; }
   footer { flex-direction: column; }
+
+  .team-dialog {
+    width: calc(100% - 16px);
+    max-height: 88vh;
+  }
+
+  .dialog-head {
+    padding: 15px 14px 12px;
+  }
+
+  .dialog-content {
+    padding: 12px 14px 16px;
+  }
 }
