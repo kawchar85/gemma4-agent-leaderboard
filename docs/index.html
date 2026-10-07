@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description" content="Community tracker for the Google Gemma 4 Developer Agent Competition." />
   <title>Gemma 4 Agent Leaderboard</title>
-  <link rel="stylesheet" href="style.css?v=3" />
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
   <header class="site-header">
@@ -40,7 +40,7 @@
               <th>Team</th>
               <th>Score</th>
               <th>Submitted</th>
-              <th>Observed time</th>
+              <th>Score time</th>
             </tr>
           </thead>
           <tbody id="historyBody"></tbody>
@@ -52,7 +52,7 @@
       <div class="section-head leaderboard-head">
         <div>
           <h2>Leaderboard</h2>
-          <p>Current public leaderboard state.</p>
+          <p>Current public leaderboard state. Select a team to view its tracked submission history.</p>
         </div>
         <input id="search" type="search" placeholder="Search teams" autocomplete="off" aria-label="Search teams" />
       </div>
@@ -66,7 +66,7 @@
               <th>Score</th>
               <th>Submissions</th>
               <th>Submitted</th>
-              <th>Observed time</th>
+              <th>Score time</th>
             </tr>
           </thead>
           <tbody id="leaderboardBody"></tbody>
@@ -81,7 +81,7 @@
     </section>
 
     <aside class="method-note">
-      <strong>Observed time</strong> estimates how long a submission took to appear on the leaderboard. It is not exact execution runtime.
+      <strong>Score time</strong> estimates how long a submission took to receive a leaderboard result. It is not exact execution runtime.
     </aside>
 
     <footer>
@@ -90,6 +90,32 @@
     </footer>
   </main>
 
-  <script src="app.js?v=3" defer></script>
+  <dialog class="team-dialog" id="teamDialog" aria-labelledby="teamDialogTitle">
+    <div class="dialog-head">
+      <div>
+        <h2 id="teamDialogTitle">Team history</h2>
+        <p id="teamDialogMeta"></p>
+      </div>
+      <button class="dialog-close" id="teamDialogClose" type="button" aria-label="Close team history">×</button>
+    </div>
+    <div class="dialog-content">
+      <p class="dialog-note">Submission history recorded by this tracker. Earlier submissions from before tracking began may not be available.</p>
+      <div class="table-wrap">
+        <table class="team-history-table">
+          <thead>
+            <tr>
+              <th>Submission</th>
+              <th>Submitted</th>
+              <th>Leaderboard score</th>
+              <th>Score time</th>
+            </tr>
+          </thead>
+          <tbody id="teamHistoryBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js?v=4" defer></script>
 </body>
 </html>
