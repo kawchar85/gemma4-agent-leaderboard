@@ -52,6 +52,20 @@ function cell(value, className = "") {
   return td;
 }
 
+function teamCell(teamId, teamName) {
+  const td = document.createElement("td");
+  td.className = "team";
+  const button = document.createElement("button");
+  button.type = "button";
+  button.className = "team-link";
+  button.dataset.teamId = String(teamId);
+  button.dataset.teamName = teamName || String(teamId);
+  button.textContent = teamName || String(teamId);
+  button.title = `View ${button.textContent} submission history`;
+  td.append(button);
+  return td;
+}
+
 function median(values) {
   if (!values.length) return null;
   const sorted = [...values].sort((a, b) => a - b);
@@ -75,7 +89,7 @@ function renderSummary() {
   const count = data.meta?.tracked_event_count ?? trackedEvents().length;
   const updated = relativeTime(data.meta?.updated_at);
 
-  const medianText = medianMinutes === null ? "Median observed time: —" : `Median observed time: ${formatDuration(medianMinutes)}`;
+  const medianText = medianMinutes === null ? "Median score time: —" : `Median score time: ${formatDuration(medianMinutes)}`;
   const trackedText = `${count} tracked submission${count === 1 ? "" : "s"}`;
   $("summary").textContent = `${medianText} · ${trackedText} · Updated ${updated}`;
 
@@ -111,7 +125,7 @@ function renderLeaderboard() {
       const tr = document.createElement("tr");
       tr.append(
         cell(row.rank, "rank"),
-        cell(row.team_name, "team"),
+        teamCell(row.team_id, row.team_name),
         cell(row.score, "score"),
         cell(row.submission_count),
         cell(formatDate(row.submitted_at)),
@@ -154,13 +168,72 @@ function renderHistory() {
   for (const event of events.slice(0, RECENT_LIMIT)) {
     const tr = document.createElement("tr");
     tr.append(
-      cell(event.teamName, "team"),
+      teamCell(event.teamId, event.teamName),
       cell(event.score, "score"),
       cell(formatDate(event.submitted_at)),
       cell(formatDuration(event.observed_minutes), "duration")
     );
     body.append(tr);
   }
+}
+
+function teamHistory(teamId) {
+  return [...(data.history?.[String(teamId)] || [])].sort((a, b) => {
+    const aKey = a.submitted_at || a.first_seen_at || "";
+    const bKey = b.submitted_at || b.first_seen_at || "";
+    return String(bKey).localeCompare(String(aKey));
+  });
+}
+
+function openTeamHistory(teamId, fallbackName = "") {
+  const row = (data.leaderboard || []).find((item) => String(item.team_id) === String(teamId));
+  const teamName = row?.team_name || fallbackName || String(teamId);
+  const events = teamHistory(teamId);
+
+  $("teamDialogTitle").textContent = teamName;
+
+  const meta = [];
+  if (row?.rank !== null && row?.rank !== undefined) meta.push(`Rank #${row.rank}`);
+  if (row?.score !== null && row?.score !== undefined) meta.push(`Current score ${row.score}`);
+  if (row?.submission_count !== null && row?.submission_count !== undefined) {
+    meta.push(`${row.submission_count} submission${Number(row.submission_count) === 1 ? "" : "s"}`);
+  }
+  $("teamDialogMeta").textContent = meta.join(" · ");
+
+  const body = $("teamHistoryBody");
+  body.replaceChildren();
+
+  if (!events.length) {
+    const tr = document.createElement("tr");
+    const td = cell("No history recorded for this team yet.", "empty");
+    td.colSpan = 4;
+    tr.append(td);
+    body.append(tr);
+  } else {
+    for (const event of events) {
+      const tr = document.createElement("tr");
+      const submissionNumber = event.submission_count ?? "—";
+      const scoreTime = event.baseline ? "Before tracking" : formatDuration(event.observed_minutes);
+      tr.append(
+        cell(submissionNumber),
+        cell(formatDate(event.submitted_at)),
+        cell(event.score, "score"),
+        cell(scoreTime, event.baseline ? "muted" : "duration")
+      );
+      body.append(tr);
+    }
+  }
+
+  const dialog = $("teamDialog");
+  if (!dialog.open) dialog.showModal();
+}
+
+function bindTeamClicks(container) {
+  container.addEventListener("click", (event) => {
+    const button = event.target.closest(".team-link");
+    if (!button) return;
+    openTeamHistory(button.dataset.teamId, button.dataset.teamName);
+  });
 }
 
 async function init() {
@@ -172,6 +245,9 @@ async function init() {
     renderSummary();
     renderHistory();
     renderLeaderboard();
+
+    bindTeamClicks($("historyBody"));
+    bindTeamClicks($("leaderboardBody"));
 
     $("search").addEventListener("input", (event) => {
       currentQuery = event.target.value;
@@ -192,6 +268,11 @@ async function init() {
         currentPage += 1;
         renderLeaderboard();
       }
+    });
+
+    $("teamDialogClose").addEventListener("click", () => $("teamDialog").close());
+    $("teamDialog").addEventListener("click", (event) => {
+      if (event.target === $("teamDialog")) $("teamDialog").close();
     });
   } catch (error) {
     console.error(error);
