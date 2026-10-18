@@ -943,6 +943,16 @@
         "score": 0.18,
         "submission_count": 10,
         "submitted_at": "2026-10-16T20:59:14Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:05:35Z",
+        "observed_minutes": 931,
+        "rank_when_observed": 166,
+        "score": 0.18,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T22:05:35Z"
       }
     ],
     "16948117": [
@@ -1803,6 +1813,16 @@
         "score": 0.15,
         "submission_count": 2,
         "submitted_at": "2026-10-11T22:07:43Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:07:05Z",
+        "observed_minutes": 990,
+        "rank_when_observed": 1086,
+        "score": 0.15,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T21:07:05Z"
       }
     ],
     "16948572": [
@@ -2009,6 +2029,16 @@
         "score": 0.15,
         "submission_count": 14,
         "submitted_at": "2026-10-17T09:08:45Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T06:47:13Z",
+        "observed_minutes": 410,
+        "rank_when_observed": 1082,
+        "score": 0.15,
+        "submission_count": 15,
+        "submitted_at": "2026-10-18T06:47:13Z"
       }
     ],
     "16948600": [
@@ -3127,6 +3157,16 @@
         "score": 0.17,
         "submission_count": 19,
         "submitted_at": "2026-10-16T08:48:47Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:47:38Z",
+        "observed_minutes": 889,
+        "rank_when_observed": 715,
+        "score": 0.17,
+        "submission_count": 20,
+        "submitted_at": "2026-10-17T22:47:38Z"
       }
     ],
     "16948797": [
@@ -3531,6 +3571,16 @@
         "score": 0.15,
         "submission_count": 21,
         "submitted_at": "2026-10-16T22:44:10Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:09:53Z",
+        "observed_minutes": 927,
+        "rank_when_observed": 894,
+        "score": 0.17,
+        "submission_count": 22,
+        "submitted_at": "2026-10-17T22:09:53Z"
       }
     ],
     "16948890": [
@@ -4365,6 +4415,16 @@
         "score": 0.13,
         "submission_count": 19,
         "submitted_at": "2026-10-16T20:11:17Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:47:06Z",
+        "observed_minutes": 890,
+        "rank_when_observed": 895,
+        "score": 0.17,
+        "submission_count": 20,
+        "submitted_at": "2026-10-17T22:47:06Z"
       }
     ],
     "16949046": [
@@ -4927,6 +4987,16 @@
         "score": 0.17,
         "submission_count": 4,
         "submitted_at": "2026-10-16T20:01:18Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:54:55Z",
+        "observed_minutes": 1302,
+        "rank_when_observed": 809,
+        "score": 0.17,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T15:54:55Z"
       }
     ],
     "16949226": [
@@ -5101,6 +5171,16 @@
         "score": 0.18,
         "submission_count": 19,
         "submitted_at": "2026-10-15T20:30:43Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:38:25Z",
+        "observed_minutes": 1018,
+        "rank_when_observed": 409,
+        "score": 0.18,
+        "submission_count": 20,
+        "submitted_at": "2026-10-17T20:38:25Z"
       }
     ],
     "16949260": [
@@ -5453,6 +5533,16 @@
         "score": 0.18,
         "submission_count": 10,
         "submitted_at": "2026-10-15T18:31:19Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:30:56Z",
+        "observed_minutes": 1086,
+        "rank_when_observed": 361,
+        "score": 0.18,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T19:30:56Z"
       }
     ],
     "16949380": [
@@ -5961,6 +6051,16 @@
         "score": 0.17,
         "submission_count": 18,
         "submitted_at": "2026-10-16T22:05:57Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:22:06Z",
+        "observed_minutes": 1035,
+        "rank_when_observed": 593,
+        "score": 0.17,
+        "submission_count": 19,
+        "submitted_at": "2026-10-17T20:22:06Z"
       }
     ],
     "16949540": [
@@ -13469,6 +13569,16 @@
         "score": 0.12,
         "submission_count": 9,
         "submitted_at": "2026-10-16T17:02:06Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:12:15Z",
+        "observed_minutes": 1105,
+        "rank_when_observed": 1316,
+        "score": 0.15,
+        "submission_count": 10,
+        "submitted_at": "2026-10-17T19:12:15Z"
       }
     ],
     "16951438": [
@@ -15139,6 +15249,18 @@
         "submitted_at": "2026-09-24T08:36:39Z"
       }
     ],
+    "16952187": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:56:55Z",
+        "observed_minutes": 760,
+        "rank_when_observed": 2495,
+        "score": 0.08,
+        "submission_count": 1,
+        "submitted_at": "2026-10-18T00:56:55Z"
+      }
+    ],
     "16952198": [
       {
         "baseline": false,
@@ -15877,6 +15999,16 @@
         "score": 0.15,
         "submission_count": 12,
         "submitted_at": "2026-10-15T18:29:15Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:35:38Z",
+        "observed_minutes": 1021,
+        "rank_when_observed": 1234,
+        "score": 0.15,
+        "submission_count": 13,
+        "submitted_at": "2026-10-17T20:35:38Z"
       }
     ],
     "16952520": [
@@ -16393,6 +16525,16 @@
         "score": 0.08,
         "submission_count": 19,
         "submitted_at": "2026-10-16T23:56:39Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:14:05Z",
+        "observed_minutes": 863,
+        "rank_when_observed": 2429,
+        "score": 0.08,
+        "submission_count": 20,
+        "submitted_at": "2026-10-17T23:14:05Z"
       }
     ],
     "16952659": [
@@ -23721,6 +23863,16 @@
         "score": 0.17,
         "submission_count": 9,
         "submitted_at": "2026-10-12T20:30:38Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:10:15Z",
+        "observed_minutes": 1047,
+        "rank_when_observed": 589,
+        "score": 0.17,
+        "submission_count": 10,
+        "submitted_at": "2026-10-17T20:10:15Z"
       }
     ],
     "16955777": [
@@ -28183,6 +28335,16 @@
         "score": 0.1,
         "submission_count": 6,
         "submitted_at": "2026-10-16T17:22:29Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:56:55Z",
+        "observed_minutes": 880,
+        "rank_when_observed": 2083,
+        "score": 0.1,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T22:56:55Z"
       }
     ],
     "16956897": [
@@ -28855,6 +29017,16 @@
         "score": 0.18,
         "submission_count": 19,
         "submitted_at": "2026-10-16T21:16:33Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:20:02Z",
+        "observed_minutes": 917,
+        "rank_when_observed": 377,
+        "score": 0.18,
+        "submission_count": 20,
+        "submitted_at": "2026-10-17T22:20:02Z"
       }
     ],
     "16957100": [
@@ -30129,6 +30301,16 @@
         "score": 0.08,
         "submission_count": 3,
         "submitted_at": "2026-10-08T14:48:42Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:59:09Z",
+        "observed_minutes": 1118,
+        "rank_when_observed": 1315,
+        "score": 0.15,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T18:59:09Z"
       }
     ],
     "16957374": [
@@ -35715,6 +35897,16 @@
         "score": 0.15,
         "submission_count": 14,
         "submitted_at": "2026-10-16T11:42:49Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:17:29Z",
+        "observed_minutes": 1159,
+        "rank_when_observed": 1267,
+        "score": 0.15,
+        "submission_count": 15,
+        "submitted_at": "2026-10-17T18:17:29Z"
       }
     ],
     "16958822": [
@@ -36607,6 +36799,16 @@
         "score": 0.22,
         "submission_count": 13,
         "submitted_at": "2026-10-16T06:23:15Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:48:56Z",
+        "observed_minutes": 1068,
+        "rank_when_observed": 9,
+        "score": 0.22,
+        "submission_count": 14,
+        "submitted_at": "2026-10-17T19:48:56Z"
       }
     ],
     "16959092": [
@@ -37791,6 +37993,16 @@
         "score": 0.15,
         "submission_count": 14,
         "submitted_at": "2026-10-16T10:28:54Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:56:38Z",
+        "observed_minutes": 1000,
+        "rank_when_observed": 893,
+        "score": 0.17,
+        "submission_count": 15,
+        "submitted_at": "2026-10-17T20:56:38Z"
       }
     ],
     "16959455": [
@@ -38047,6 +38259,16 @@
         "score": 0.13,
         "submission_count": 11,
         "submitted_at": "2026-10-10T22:20:51Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:57:36Z",
+        "observed_minutes": 999,
+        "rank_when_observed": 1501,
+        "score": 0.13,
+        "submission_count": 12,
+        "submitted_at": "2026-10-17T20:57:36Z"
       }
     ],
     "16959512": [
@@ -40631,6 +40853,16 @@
         "score": 0.1,
         "submission_count": 17,
         "submitted_at": "2026-10-17T00:00:30Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:00:18Z",
+        "observed_minutes": 817,
+        "rank_when_observed": 2238,
+        "score": 0.1,
+        "submission_count": 18,
+        "submitted_at": "2026-10-18T00:00:18Z"
       }
     ],
     "16960361": [
@@ -41097,6 +41329,16 @@
         "score": 0.15,
         "submission_count": 14,
         "submitted_at": "2026-10-16T23:30:05Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:30:05Z",
+        "observed_minutes": 847,
+        "rank_when_observed": 1057,
+        "score": 0.15,
+        "submission_count": 15,
+        "submitted_at": "2026-10-17T23:30:05Z"
       }
     ],
     "16960465": [
@@ -41685,6 +41927,16 @@
         "score": 0.12,
         "submission_count": 2,
         "submitted_at": "2026-09-26T13:25:29Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:31:15Z",
+        "observed_minutes": 1026,
+        "rank_when_observed": 1682,
+        "score": 0.12,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T20:31:15Z"
       }
     ],
     "16960758": [
@@ -42019,6 +42271,16 @@
         "score": 0.18,
         "submission_count": 18,
         "submitted_at": "2026-10-16T23:20:01Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:19:14Z",
+        "observed_minutes": 978,
+        "rank_when_observed": 237,
+        "score": 0.18,
+        "submission_count": 19,
+        "submitted_at": "2026-10-17T21:19:14Z"
       }
     ],
     "16960837": [
@@ -44377,6 +44639,16 @@
         "score": 0.13,
         "submission_count": 7,
         "submitted_at": "2026-10-08T13:08:12Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:15:01Z",
+        "observed_minutes": 1222,
+        "rank_when_observed": 1412,
+        "score": 0.13,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T17:15:01Z"
       }
     ],
     "16961934": [
@@ -44635,6 +44907,16 @@
         "score": 0.12,
         "submission_count": 18,
         "submitted_at": "2026-10-16T20:28:36Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:01:46Z",
+        "observed_minutes": 1355,
+        "rank_when_observed": 1902,
+        "score": 0.12,
+        "submission_count": 19,
+        "submitted_at": "2026-10-17T15:01:46Z"
       }
     ],
     "16962003": [
@@ -45525,6 +45807,16 @@
         "score": 0.03,
         "submission_count": 2,
         "submitted_at": "2026-10-17T02:12:36Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T02:29:06Z",
+        "observed_minutes": 668,
+        "rank_when_observed": 2876,
+        "score": 0.03,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T02:29:06Z"
       }
     ],
     "16962471": [
@@ -46697,6 +46989,16 @@
         "score": 0.13,
         "submission_count": 15,
         "submitted_at": "2026-10-16T12:56:52Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:49:36Z",
+        "observed_minutes": 1127,
+        "rank_when_observed": 1445,
+        "score": 0.13,
+        "submission_count": 16,
+        "submitted_at": "2026-10-17T18:49:36Z"
       }
     ],
     "16963010": [
@@ -47643,6 +47945,16 @@
         "score": 0.17,
         "submission_count": 20,
         "submitted_at": "2026-10-15T10:41:14Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:11:41Z",
+        "observed_minutes": 1165,
+        "rank_when_observed": 743,
+        "score": 0.17,
+        "submission_count": 21,
+        "submitted_at": "2026-10-17T18:11:41Z"
       }
     ],
     "16963334": [
@@ -51083,6 +51395,16 @@
         "score": 0.13,
         "submission_count": 4,
         "submitted_at": "2026-10-15T15:37:30Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:53:13Z",
+        "observed_minutes": 824,
+        "rank_when_observed": 1603,
+        "score": 0.13,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T23:53:13Z"
       }
     ],
     "16965795": [
@@ -53145,6 +53467,16 @@
         "score": 0.2,
         "submission_count": 14,
         "submitted_at": "2026-10-16T23:05:01Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:22:38Z",
+        "observed_minutes": 854,
+        "rank_when_observed": 80,
+        "score": 0.2,
+        "submission_count": 15,
+        "submitted_at": "2026-10-17T23:22:38Z"
       }
     ],
     "16966666": [
@@ -54149,6 +54481,16 @@
         "score": 0.15,
         "submission_count": 15,
         "submitted_at": "2026-10-16T19:48:29Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:36:41Z",
+        "observed_minutes": 1020,
+        "rank_when_observed": 1284,
+        "score": 0.15,
+        "submission_count": 16,
+        "submitted_at": "2026-10-17T20:36:41Z"
       }
     ],
     "16966900": [
@@ -55619,6 +55961,16 @@
         "score": 0.12,
         "submission_count": 12,
         "submitted_at": "2026-10-16T21:01:09Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:00:55Z",
+        "observed_minutes": 996,
+        "rank_when_observed": 1697,
+        "score": 0.12,
+        "submission_count": 13,
+        "submitted_at": "2026-10-17T21:00:55Z"
       }
     ],
     "16967530": [
@@ -55741,6 +56093,16 @@
         "score": 0.15,
         "submission_count": 13,
         "submitted_at": "2026-10-14T21:59:32Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:36:12Z",
+        "observed_minutes": 841,
+        "rank_when_observed": 999,
+        "score": 0.15,
+        "submission_count": 14,
+        "submitted_at": "2026-10-17T23:36:12Z"
       }
     ],
     "16967557": [
@@ -56099,6 +56461,16 @@
         "score": 0.17,
         "submission_count": 5,
         "submitted_at": "2026-10-14T15:05:40Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:19:09Z",
+        "observed_minutes": 1218,
+        "rank_when_observed": 709,
+        "score": 0.17,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T17:19:09Z"
       }
     ],
     "16967594": [
@@ -57967,6 +58339,16 @@
         "score": 0.05,
         "submission_count": 2,
         "submitted_at": "2026-10-03T22:59:00Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:37:51Z",
+        "observed_minutes": 899,
+        "rank_when_observed": 2274,
+        "score": 0.1,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T22:37:51Z"
       }
     ],
     "16968502": [
@@ -58975,6 +59357,16 @@
         "score": 0.15,
         "submission_count": 16,
         "submitted_at": "2026-10-15T15:27:04Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T16:09:32Z",
+        "observed_minutes": 1287,
+        "rank_when_observed": 1230,
+        "score": 0.15,
+        "submission_count": 17,
+        "submitted_at": "2026-10-17T16:09:32Z"
       }
     ],
     "16968922": [
@@ -59759,6 +60151,16 @@
         "score": 0.17,
         "submission_count": 15,
         "submitted_at": "2026-10-13T20:34:21Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:27:33Z",
+        "observed_minutes": 1329,
+        "rank_when_observed": 495,
+        "score": 0.17,
+        "submission_count": 16,
+        "submitted_at": "2026-10-17T15:27:33Z"
       }
     ],
     "16969100": [
@@ -60121,6 +60523,16 @@
         "score": 0.17,
         "submission_count": 6,
         "submitted_at": "2026-10-13T09:27:49Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:26:04Z",
+        "observed_minutes": 911,
+        "rank_when_observed": 705,
+        "score": 0.17,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T22:26:04Z"
       }
     ],
     "16969169": [
@@ -61311,6 +61723,16 @@
         "score": 0.13,
         "submission_count": 2,
         "submitted_at": "2026-10-13T00:51:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:28:52Z",
+        "observed_minutes": 848,
+        "rank_when_observed": 1545,
+        "score": 0.13,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T23:28:52Z"
       }
     ],
     "16969793": [
@@ -62739,6 +63161,16 @@
         "score": 0,
         "submission_count": 1,
         "submitted_at": "2026-09-27T06:54:38Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T04:21:43Z",
+        "observed_minutes": 555,
+        "rank_when_observed": 2797,
+        "score": 0.05,
+        "submission_count": 2,
+        "submitted_at": "2026-10-18T04:21:43Z"
       }
     ],
     "16970958": [
@@ -64045,6 +64477,16 @@
         "score": 0.12,
         "submission_count": 16,
         "submitted_at": "2026-10-16T20:49:44Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:06:13Z",
+        "observed_minutes": 991,
+        "rank_when_observed": 1320,
+        "score": 0.15,
+        "submission_count": 17,
+        "submitted_at": "2026-10-17T21:06:13Z"
       }
     ],
     "16971740": [
@@ -65197,6 +65639,16 @@
         "score": 0.17,
         "submission_count": 16,
         "submitted_at": "2026-10-17T03:12:24Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:00:17Z",
+        "observed_minutes": 817,
+        "rank_when_observed": 780,
+        "score": 0.17,
+        "submission_count": 17,
+        "submitted_at": "2026-10-18T00:00:17Z"
       }
     ],
     "16972227": [
@@ -67971,6 +68423,16 @@
         "score": 0.18,
         "submission_count": 17,
         "submitted_at": "2026-10-16T14:27:27Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:59:41Z",
+        "observed_minutes": 1297,
+        "rank_when_observed": 153,
+        "score": 0.18,
+        "submission_count": 18,
+        "submitted_at": "2026-10-17T15:59:41Z"
       }
     ],
     "16973745": [
@@ -68529,6 +68991,16 @@
         "score": 0.1,
         "submission_count": 2,
         "submitted_at": "2026-10-10T19:06:47Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:34:17Z",
+        "observed_minutes": 1203,
+        "rank_when_observed": 890,
+        "score": 0.17,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T17:34:17Z"
       }
     ],
     "16974468": [
@@ -71615,6 +72087,16 @@
         "score": 0.18,
         "submission_count": 15,
         "submitted_at": "2026-10-16T12:00:23Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:02:08Z",
+        "observed_minutes": 1235,
+        "rank_when_observed": 379,
+        "score": 0.18,
+        "submission_count": 16,
+        "submitted_at": "2026-10-17T17:02:08Z"
       }
     ],
     "16976564": [
@@ -73491,6 +73973,16 @@
         "score": 0,
         "submission_count": 6,
         "submitted_at": "2026-10-15T15:15:51Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T05:55:11Z",
+        "observed_minutes": 462,
+        "rank_when_observed": 3039,
+        "score": 0,
+        "submission_count": 7,
+        "submitted_at": "2026-10-18T05:55:11Z"
       }
     ],
     "16978468": [
@@ -74987,6 +75479,16 @@
         "score": 0.18,
         "submission_count": 18,
         "submitted_at": "2026-10-16T04:25:21Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:43:10Z",
+        "observed_minutes": 1134,
+        "rank_when_observed": 285,
+        "score": 0.18,
+        "submission_count": 19,
+        "submitted_at": "2026-10-17T18:43:10Z"
       }
     ],
     "16980038": [
@@ -75389,6 +75891,16 @@
         "score": 0.18,
         "submission_count": 13,
         "submitted_at": "2026-10-16T10:25:33Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:14:48Z",
+        "observed_minutes": 922,
+        "rank_when_observed": 297,
+        "score": 0.18,
+        "submission_count": 14,
+        "submitted_at": "2026-10-17T22:14:48Z"
       }
     ],
     "16980166": [
@@ -76471,6 +76983,16 @@
         "score": 0.2,
         "submission_count": 9,
         "submitted_at": "2026-10-16T00:48:39Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:13:05Z",
+        "observed_minutes": 864,
+        "rank_when_observed": 52,
+        "score": 0.2,
+        "submission_count": 10,
+        "submitted_at": "2026-10-17T23:13:05Z"
       }
     ],
     "16981035": [
@@ -81219,6 +81741,16 @@
         "score": 0.17,
         "submission_count": 9,
         "submitted_at": "2026-10-16T07:30:43Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:53:10Z",
+        "observed_minutes": 1004,
+        "rank_when_observed": 830,
+        "score": 0.17,
+        "submission_count": 10,
+        "submitted_at": "2026-10-17T20:53:10Z"
       }
     ],
     "16985312": [
@@ -81947,6 +82479,16 @@
         "score": 0.08,
         "submission_count": 7,
         "submitted_at": "2026-10-16T21:54:59Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:30:05Z",
+        "observed_minutes": 1027,
+        "rank_when_observed": 1319,
+        "score": 0.15,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T20:30:05Z"
       }
     ],
     "16985826": [
@@ -82135,6 +82677,16 @@
         "score": 0.18,
         "submission_count": 4,
         "submitted_at": "2026-10-17T08:29:53Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T05:47:45Z",
+        "observed_minutes": 469,
+        "rank_when_observed": 458,
+        "score": 0.18,
+        "submission_count": 5,
+        "submitted_at": "2026-10-18T05:47:45Z"
       }
     ],
     "16986030": [
@@ -83757,6 +84309,16 @@
         "score": 0.2,
         "submission_count": 13,
         "submitted_at": "2026-10-15T12:24:55Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:24:59Z",
+        "observed_minutes": 912,
+        "rank_when_observed": 36,
+        "score": 0.2,
+        "submission_count": 14,
+        "submitted_at": "2026-10-17T22:24:59Z"
       }
     ],
     "16986975": [
@@ -84801,6 +85363,16 @@
         "score": 0.18,
         "submission_count": 8,
         "submitted_at": "2026-10-12T08:26:36Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:59:25Z",
+        "observed_minutes": 1117,
+        "rank_when_observed": 220,
+        "score": 0.18,
+        "submission_count": 9,
+        "submitted_at": "2026-10-17T18:59:25Z"
       }
     ],
     "16988011": [
@@ -86069,6 +86641,16 @@
         "score": 0.15,
         "submission_count": 12,
         "submitted_at": "2026-10-16T09:28:57Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:10:12Z",
+        "observed_minutes": 1047,
+        "rank_when_observed": 1003,
+        "score": 0.15,
+        "submission_count": 13,
+        "submitted_at": "2026-10-17T20:10:12Z"
       }
     ],
     "16988760": [
@@ -88313,6 +88895,16 @@
         "score": 0.12,
         "submission_count": 8,
         "submitted_at": "2026-10-16T12:16:33Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:10:55Z",
+        "observed_minutes": 1226,
+        "rank_when_observed": 1927,
+        "score": 0.12,
+        "submission_count": 9,
+        "submitted_at": "2026-10-17T17:10:55Z"
       }
     ],
     "16990223": [
@@ -88583,6 +89175,16 @@
         "score": 0.15,
         "submission_count": 7,
         "submitted_at": "2026-10-15T14:49:00Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:29:25Z",
+        "observed_minutes": 967,
+        "rank_when_observed": 1159,
+        "score": 0.15,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T21:29:25Z"
       }
     ],
     "16990530": [
@@ -89203,6 +89805,16 @@
         "score": 0.13,
         "submission_count": 8,
         "submitted_at": "2026-10-10T11:31:42Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:18:01Z",
+        "observed_minutes": 1219,
+        "rank_when_observed": 1311,
+        "score": 0.15,
+        "submission_count": 9,
+        "submitted_at": "2026-10-17T17:18:01Z"
       }
     ],
     "16990896": [
@@ -89733,6 +90345,16 @@
         "score": 0.12,
         "submission_count": 4,
         "submitted_at": "2026-10-17T19:59:20Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T05:59:46Z",
+        "observed_minutes": 457,
+        "rank_when_observed": 1736,
+        "score": 0.12,
+        "submission_count": 5,
+        "submitted_at": "2026-10-18T05:59:46Z"
       }
     ],
     "16991173": [
@@ -90481,6 +91103,16 @@
         "score": 0.15,
         "submission_count": 12,
         "submitted_at": "2026-10-15T05:53:27Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:37:06Z",
+        "observed_minutes": 1320,
+        "rank_when_observed": 885,
+        "score": 0.17,
+        "submission_count": 13,
+        "submitted_at": "2026-10-17T15:37:06Z"
       }
     ],
     "16991907": [
@@ -92593,6 +93225,16 @@
         "score": 0.15,
         "submission_count": 9,
         "submitted_at": "2026-10-16T22:00:38Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:50:39Z",
+        "observed_minutes": 886,
+        "rank_when_observed": 1056,
+        "score": 0.15,
+        "submission_count": 10,
+        "submitted_at": "2026-10-17T22:50:39Z"
       }
     ],
     "16993628": [
@@ -97741,6 +98383,16 @@
         "score": 0.18,
         "submission_count": 4,
         "submitted_at": "2026-10-15T18:39:07Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:32:59Z",
+        "observed_minutes": 1024,
+        "rank_when_observed": 265,
+        "score": 0.18,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T20:32:59Z"
       }
     ],
     "17013327": [
@@ -97813,6 +98465,16 @@
         "score": 0.15,
         "submission_count": 7,
         "submitted_at": "2026-10-16T11:23:02Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:56:20Z",
+        "observed_minutes": 1121,
+        "rank_when_observed": 892,
+        "score": 0.17,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T18:56:20Z"
       }
     ],
     "17013397": [
@@ -97905,6 +98567,16 @@
         "score": 0.18,
         "submission_count": 10,
         "submitted_at": "2026-10-16T19:40:16Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:13:46Z",
+        "observed_minutes": 1163,
+        "rank_when_observed": 410,
+        "score": 0.18,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T18:13:46Z"
       }
     ],
     "17013409": [
@@ -98299,6 +98971,16 @@
         "score": 0.13,
         "submission_count": 3,
         "submitted_at": "2026-10-04T15:02:43Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:36:41Z",
+        "observed_minutes": 1020,
+        "rank_when_observed": 1357,
+        "score": 0.13,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T20:36:41Z"
       }
     ],
     "17013621": [
@@ -99905,6 +100587,28 @@
         "score": 0.15,
         "submission_count": 11,
         "submitted_at": "2026-10-16T10:29:14Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T15:07:29Z",
+        "observed_minutes": 1349,
+        "rank_when_observed": 884,
+        "score": 0.17,
+        "submission_count": 12,
+        "submitted_at": "2026-10-17T15:07:29Z"
+      }
+    ],
+    "17014855": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:03:05Z",
+        "observed_minutes": 1234,
+        "rank_when_observed": 1671,
+        "score": 0.13,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T17:03:05Z"
       }
     ],
     "17014863": [
@@ -100249,6 +100953,16 @@
         "score": 0.15,
         "submission_count": 3,
         "submitted_at": "2026-10-16T19:19:30Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:45:02Z",
+        "observed_minutes": 1132,
+        "rank_when_observed": 1282,
+        "score": 0.15,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T18:45:02Z"
       }
     ],
     "17015111": [
@@ -100935,6 +101649,16 @@
         "score": 0.18,
         "submission_count": 10,
         "submitted_at": "2026-10-16T19:33:31Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:36:23Z",
+        "observed_minutes": 1140,
+        "rank_when_observed": 380,
+        "score": 0.18,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T18:36:23Z"
       }
     ],
     "17015790": [
@@ -101181,6 +101905,16 @@
         "score": 0.18,
         "submission_count": 11,
         "submitted_at": "2026-10-16T18:22:49Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:03:32Z",
+        "observed_minutes": 1113,
+        "rank_when_observed": 375,
+        "score": 0.18,
+        "submission_count": 12,
+        "submitted_at": "2026-10-17T19:03:32Z"
       }
     ],
     "17015855": [
@@ -102069,6 +102803,16 @@
         "score": 0.17,
         "submission_count": 13,
         "submitted_at": "2026-10-16T20:24:15Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:27:05Z",
+        "observed_minutes": 910,
+        "rank_when_observed": 473,
+        "score": 0.17,
+        "submission_count": 14,
+        "submitted_at": "2026-10-17T22:27:05Z"
       }
     ],
     "17017035": [
@@ -105187,6 +105931,16 @@
         "score": 0.17,
         "submission_count": 12,
         "submitted_at": "2026-10-17T00:08:31Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:03:54Z",
+        "observed_minutes": 813,
+        "rank_when_observed": 469,
+        "score": 0.17,
+        "submission_count": 13,
+        "submitted_at": "2026-10-18T00:03:54Z"
       }
     ],
     "17019444": [
@@ -108269,6 +109023,16 @@
         "score": 0.18,
         "submission_count": 5,
         "submitted_at": "2026-10-17T00:01:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:00:33Z",
+        "observed_minutes": 816,
+        "rank_when_observed": 428,
+        "score": 0.18,
+        "submission_count": 6,
+        "submitted_at": "2026-10-18T00:00:33Z"
       }
     ],
     "17021910": [
@@ -108371,6 +109135,16 @@
         "score": 0.17,
         "submission_count": 10,
         "submitted_at": "2026-10-16T12:39:21Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:21:47Z",
+        "observed_minutes": 1095,
+        "rank_when_observed": 836,
+        "score": 0.17,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T19:21:47Z"
       }
     ],
     "17021915": [
@@ -108847,6 +109621,16 @@
         "score": 0.13,
         "submission_count": 6,
         "submitted_at": "2026-10-14T18:46:38Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:28:44Z",
+        "observed_minutes": 1208,
+        "rank_when_observed": 1313,
+        "score": 0.15,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T17:28:44Z"
       }
     ],
     "17022331": [
@@ -113127,6 +113911,16 @@
         "score": 0.12,
         "submission_count": 6,
         "submitted_at": "2026-10-08T08:41:50Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:23:13Z",
+        "observed_minutes": 1094,
+        "rank_when_observed": 1811,
+        "score": 0.12,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T19:23:13Z"
       }
     ],
     "17026314": [
@@ -113585,6 +114379,16 @@
         "score": 0.15,
         "submission_count": 4,
         "submitted_at": "2026-10-16T18:34:13Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:26:59Z",
+        "observed_minutes": 970,
+        "rank_when_observed": 1171,
+        "score": 0.15,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T21:26:59Z"
       }
     ],
     "17026724": [
@@ -114277,6 +115081,16 @@
         "score": 0.17,
         "submission_count": 7,
         "submitted_at": "2026-10-16T22:32:36Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:09:44Z",
+        "observed_minutes": 1047,
+        "rank_when_observed": 701,
+        "score": 0.17,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T20:09:44Z"
       }
     ],
     "17027348": [
@@ -114879,6 +115693,18 @@
         "submitted_at": "2026-10-17T10:21:06Z"
       }
     ],
+    "17027825": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:07:46Z",
+        "observed_minutes": 1229,
+        "rank_when_observed": 888,
+        "score": 0.17,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T17:07:46Z"
+      }
+    ],
     "17027836": [
       {
         "baseline": false,
@@ -114973,6 +115799,16 @@
         "score": 0.12,
         "submission_count": 1,
         "submitted_at": "2026-10-03T21:33:00Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:15:09Z",
+        "observed_minutes": 922,
+        "rank_when_observed": 1771,
+        "score": 0.12,
+        "submission_count": 2,
+        "submitted_at": "2026-10-17T22:15:09Z"
       }
     ],
     "17027958": [
@@ -115189,6 +116025,16 @@
         "score": 0.18,
         "submission_count": 10,
         "submitted_at": "2026-10-16T22:57:55Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:03:48Z",
+        "observed_minutes": 1113,
+        "rank_when_observed": 344,
+        "score": 0.18,
+        "submission_count": 11,
+        "submitted_at": "2026-10-17T19:03:48Z"
       }
     ],
     "17028094": [
@@ -115701,6 +116547,18 @@
         "submitted_at": "2026-10-16T17:23:23Z"
       }
     ],
+    "17028592": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:55:19Z",
+        "observed_minutes": 1062,
+        "rank_when_observed": 1318,
+        "score": 0.15,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T19:55:19Z"
+      }
+    ],
     "17028749": [
       {
         "baseline": false,
@@ -115917,6 +116775,16 @@
         "score": 0,
         "submission_count": 4,
         "submitted_at": "2026-10-17T04:18:03Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T06:55:03Z",
+        "observed_minutes": 402,
+        "rank_when_observed": 3098,
+        "score": 0,
+        "submission_count": 5,
+        "submitted_at": "2026-10-18T06:55:03Z"
       }
     ],
     "17028985": [
@@ -117521,6 +118389,16 @@
         "score": 0.17,
         "submission_count": 6,
         "submitted_at": "2026-10-09T11:28:52Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:08:16Z",
+        "observed_minutes": 869,
+        "rank_when_observed": 507,
+        "score": 0.17,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T23:08:16Z"
       }
     ],
     "17031521": [
@@ -119633,6 +120511,16 @@
         "score": 0.15,
         "submission_count": 7,
         "submitted_at": "2026-10-15T16:44:35Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:55:34Z",
+        "observed_minutes": 1061,
+        "rank_when_observed": 466,
+        "score": 0.18,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T19:55:34Z"
       }
     ],
     "17033242": [
@@ -123321,6 +124209,16 @@
         "score": 0.17,
         "submission_count": 2,
         "submitted_at": "2026-10-15T11:34:39Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:48:43Z",
+        "observed_minutes": 1128,
+        "rank_when_observed": 787,
+        "score": 0.17,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T18:48:43Z"
       }
     ],
     "17039133": [
@@ -123599,6 +124497,18 @@
         "submitted_at": "2026-10-14T21:19:48Z"
       }
     ],
+    "17039470": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:10:28Z",
+        "observed_minutes": 1046,
+        "rank_when_observed": 2652,
+        "score": 0.06,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T20:10:28Z"
+      }
+    ],
     "17039553": [
       {
         "baseline": false,
@@ -123701,6 +124611,16 @@
         "score": 0.12,
         "submission_count": 7,
         "submitted_at": "2026-10-16T05:10:49Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:22:18Z",
+        "observed_minutes": 915,
+        "rank_when_observed": 1851,
+        "score": 0.12,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T22:22:18Z"
       }
     ],
     "17040099": [
@@ -124541,6 +125461,16 @@
         "score": 0.17,
         "submission_count": 5,
         "submitted_at": "2026-10-14T16:19:56Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:52:49Z",
+        "observed_minutes": 1184,
+        "rank_when_observed": 510,
+        "score": 0.17,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T17:52:49Z"
       }
     ],
     "17041888": [
@@ -124971,6 +125901,16 @@
         "score": 0.18,
         "submission_count": 7,
         "submitted_at": "2026-10-16T00:22:04Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:26:14Z",
+        "observed_minutes": 971,
+        "rank_when_observed": 266,
+        "score": 0.18,
+        "submission_count": 8,
+        "submitted_at": "2026-10-17T21:26:14Z"
       }
     ],
     "17042865": [
@@ -125579,6 +126519,16 @@
         "score": 0.05,
         "submission_count": 3,
         "submitted_at": "2026-10-16T03:43:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T02:27:25Z",
+        "observed_minutes": 669,
+        "rank_when_observed": 2276,
+        "score": 0.1,
+        "submission_count": 4,
+        "submitted_at": "2026-10-18T02:27:25Z"
       }
     ],
     "17043670": [
@@ -125861,6 +126811,16 @@
         "score": 0.15,
         "submission_count": 4,
         "submitted_at": "2026-10-15T01:25:47Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:14:00Z",
+        "observed_minutes": 1103,
+        "rank_when_observed": 1058,
+        "score": 0.15,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T19:14:00Z"
       }
     ],
     "17043945": [
@@ -126355,6 +127315,16 @@
         "score": 0.17,
         "submission_count": 3,
         "submitted_at": "2026-10-14T22:11:13Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:32:25Z",
+        "observed_minutes": 904,
+        "rank_when_observed": 488,
+        "score": 0.17,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T22:32:25Z"
       }
     ],
     "17044324": [
@@ -127123,6 +128093,16 @@
         "score": 0.18,
         "submission_count": 5,
         "submitted_at": "2026-10-15T15:42:22Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:11:12Z",
+        "observed_minutes": 1226,
+        "rank_when_observed": 404,
+        "score": 0.18,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T17:11:12Z"
       }
     ],
     "17045147": [
@@ -127735,6 +128715,16 @@
         "score": 0.03,
         "submission_count": 2,
         "submitted_at": "2026-10-17T13:29:29Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T13:06:56Z",
+        "observed_minutes": 30,
+        "rank_when_observed": 2867,
+        "score": 0.03,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T13:06:56Z"
       }
     ],
     "17047822": [
@@ -128769,6 +129759,16 @@
         "score": 0.18,
         "submission_count": 8,
         "submitted_at": "2026-10-16T23:48:53Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:34:18Z",
+        "observed_minutes": 843,
+        "rank_when_observed": 170,
+        "score": 0.18,
+        "submission_count": 9,
+        "submitted_at": "2026-10-17T23:34:18Z"
       }
     ],
     "17051473": [
@@ -129089,6 +130089,16 @@
         "score": 0.18,
         "submission_count": 3,
         "submitted_at": "2026-10-16T09:46:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T16:49:32Z",
+        "observed_minutes": 1247,
+        "rank_when_observed": 264,
+        "score": 0.18,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T16:49:32Z"
       }
     ],
     "17052465": [
@@ -129565,6 +130575,16 @@
         "score": 0.13,
         "submission_count": 3,
         "submitted_at": "2026-10-17T00:26:17Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:12:01Z",
+        "observed_minutes": 805,
+        "rank_when_observed": 1643,
+        "score": 0.13,
+        "submission_count": 4,
+        "submitted_at": "2026-10-18T00:12:01Z"
       }
     ],
     "17054390": [
@@ -132053,6 +133073,16 @@
         "score": 0.18,
         "submission_count": 3,
         "submitted_at": "2026-10-14T19:39:03Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:53:32Z",
+        "observed_minutes": 1123,
+        "rank_when_observed": 241,
+        "score": 0.18,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T18:53:32Z"
       }
     ],
     "17063763": [
@@ -133701,6 +134731,16 @@
         "score": 0.17,
         "submission_count": 3,
         "submitted_at": "2026-10-16T10:26:34Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:31:41Z",
+        "observed_minutes": 905,
+        "rank_when_observed": 557,
+        "score": 0.17,
+        "submission_count": 4,
+        "submitted_at": "2026-10-17T22:31:41Z"
       }
     ],
     "17068378": [
@@ -133947,6 +134987,16 @@
         "score": 0.13,
         "submission_count": 6,
         "submitted_at": "2026-10-16T04:26:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T23:32:29Z",
+        "observed_minutes": 844,
+        "rank_when_observed": 1594,
+        "score": 0.13,
+        "submission_count": 7,
+        "submitted_at": "2026-10-17T23:32:29Z"
       }
     ],
     "17069074": [
@@ -134221,6 +135271,16 @@
         "score": 0.18,
         "submission_count": 5,
         "submitted_at": "2026-10-17T10:43:28Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:01:20Z",
+        "observed_minutes": 816,
+        "rank_when_observed": 425,
+        "score": 0.18,
+        "submission_count": 6,
+        "submitted_at": "2026-10-18T00:01:20Z"
       }
     ],
     "17069943": [
@@ -134711,6 +135771,16 @@
         "score": 0.17,
         "submission_count": 5,
         "submitted_at": "2026-10-16T20:13:54Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T20:43:32Z",
+        "observed_minutes": 1013,
+        "rank_when_observed": 768,
+        "score": 0.17,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T20:43:32Z"
       }
     ],
     "17073100": [
@@ -135065,6 +136135,16 @@
         "score": 0.17,
         "submission_count": 5,
         "submitted_at": "2026-10-16T18:51:31Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:36:19Z",
+        "observed_minutes": 1141,
+        "rank_when_observed": 725,
+        "score": 0.17,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T18:36:19Z"
       }
     ],
     "17074061": [
@@ -135245,6 +136325,16 @@
         "score": 0.18,
         "submission_count": 5,
         "submitted_at": "2026-10-16T05:21:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:26:10Z",
+        "observed_minutes": 1211,
+        "rank_when_observed": 370,
+        "score": 0.18,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T17:26:10Z"
       }
     ],
     "17074228": [
@@ -136719,6 +137809,16 @@
         "score": 0.17,
         "submission_count": 5,
         "submitted_at": "2026-10-16T20:00:37Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:11:24Z",
+        "observed_minutes": 925,
+        "rank_when_observed": 849,
+        "score": 0.17,
+        "submission_count": 6,
+        "submitted_at": "2026-10-17T22:11:24Z"
       }
     ],
     "17079802": [
@@ -137359,6 +138459,16 @@
         "score": 0.18,
         "submission_count": 4,
         "submitted_at": "2026-10-15T02:30:15Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:49:46Z",
+        "observed_minutes": 1127,
+        "rank_when_observed": 390,
+        "score": 0.18,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T18:49:46Z"
       }
     ],
     "17081487": [
@@ -137381,6 +138491,16 @@
         "score": 0.08,
         "submission_count": 2,
         "submitted_at": "2026-10-16T18:43:06Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T19:42:51Z",
+        "observed_minutes": 1074,
+        "rank_when_observed": 1317,
+        "score": 0.15,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T19:42:51Z"
       }
     ],
     "17081583": [
@@ -137931,6 +139051,16 @@
         "score": 0.2,
         "submission_count": 4,
         "submitted_at": "2026-10-16T18:38:15Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T21:05:49Z",
+        "observed_minutes": 991,
+        "rank_when_observed": 110,
+        "score": 0.2,
+        "submission_count": 5,
+        "submitted_at": "2026-10-17T21:05:49Z"
       }
     ],
     "17083533": [
@@ -139725,6 +140855,16 @@
         "score": 0.06,
         "submission_count": 2,
         "submitted_at": "2026-10-17T07:42:16Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T01:56:02Z",
+        "observed_minutes": 701,
+        "rank_when_observed": 2648,
+        "score": 0.06,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T01:56:02Z"
       }
     ],
     "17094374": [
@@ -139833,6 +140973,16 @@
         "score": 0.17,
         "submission_count": 3,
         "submitted_at": "2026-10-17T00:07:27Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:05:00Z",
+        "observed_minutes": 812,
+        "rank_when_observed": 855,
+        "score": 0.17,
+        "submission_count": 4,
+        "submitted_at": "2026-10-18T00:05:00Z"
       }
     ],
     "17094944": [
@@ -140691,6 +141841,16 @@
         "score": 0.03,
         "submission_count": 2,
         "submitted_at": "2026-10-16T18:07:11Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T01:02:34Z",
+        "observed_minutes": 754,
+        "rank_when_observed": 2496,
+        "score": 0.08,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T01:02:34Z"
       }
     ],
     "17099966": [
@@ -141243,6 +142403,16 @@
         "score": 0.17,
         "submission_count": 2,
         "submitted_at": "2026-10-17T11:02:36Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T06:30:06Z",
+        "observed_minutes": 427,
+        "rank_when_observed": 828,
+        "score": 0.17,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T06:30:06Z"
       }
     ],
     "17105152": [
@@ -141395,6 +142565,16 @@
         "score": 0.12,
         "submission_count": 2,
         "submitted_at": "2026-10-16T17:17:07Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T03:36:20Z",
+        "observed_minutes": 601,
+        "rank_when_observed": 1972,
+        "score": 0.12,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T03:36:20Z"
       }
     ],
     "17106322": [
@@ -141615,6 +142795,18 @@
         "score": 0.17,
         "submission_count": 1,
         "submitted_at": "2026-10-16T23:00:47Z"
+      }
+    ],
+    "17107650": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T22:39:37Z",
+        "observed_minutes": 897,
+        "rank_when_observed": 1988,
+        "score": 0.12,
+        "submission_count": 2,
+        "submitted_at": "2026-10-17T22:39:37Z"
       }
     ],
     "17107713": [
@@ -141839,6 +143031,18 @@
         "submitted_at": "2026-10-17T00:02:55Z"
       }
     ],
+    "17108639": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:25:06Z",
+        "observed_minutes": 1212,
+        "rank_when_observed": 1312,
+        "score": 0.15,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T17:25:06Z"
+      }
+    ],
     "17120360": [
       {
         "baseline": false,
@@ -141905,6 +143109,16 @@
         "score": 0.15,
         "submission_count": 2,
         "submitted_at": "2026-10-16T15:27:53Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T16:36:37Z",
+        "observed_minutes": 1260,
+        "rank_when_observed": 887,
+        "score": 0.17,
+        "submission_count": 3,
+        "submitted_at": "2026-10-17T16:36:37Z"
       }
     ],
     "17120923": [
@@ -142309,6 +143523,16 @@
         "score": 0.13,
         "submission_count": 2,
         "submitted_at": "2026-10-17T04:18:23Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:00:10Z",
+        "observed_minutes": 817,
+        "rank_when_observed": 1624,
+        "score": 0.13,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T00:00:10Z"
       }
     ],
     "17126046": [
@@ -142353,6 +143577,16 @@
         "score": 0.03,
         "submission_count": 2,
         "submitted_at": "2026-10-17T06:44:22Z"
+      },
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T00:01:22Z",
+        "observed_minutes": 816,
+        "rank_when_observed": 2275,
+        "score": 0.1,
+        "submission_count": 3,
+        "submitted_at": "2026-10-18T00:01:22Z"
       }
     ],
     "17126317": [
@@ -142915,6 +144149,18 @@
         "submitted_at": "2026-10-16T23:26:23Z"
       }
     ],
+    "17137447": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T16:16:49Z",
+        "observed_minutes": 1280,
+        "rank_when_observed": 1669,
+        "score": 0.13,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T16:16:49Z"
+      }
+    ],
     "17137685": [
       {
         "baseline": false,
@@ -143093,6 +144339,18 @@
         "submitted_at": "2026-10-17T06:53:14Z"
       }
     ],
+    "17139541": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:14:46Z",
+        "observed_minutes": 1222,
+        "rank_when_observed": 889,
+        "score": 0.17,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T17:14:46Z"
+      }
+    ],
     "17139624": [
       {
         "baseline": false,
@@ -143249,6 +144507,18 @@
         "submitted_at": "2026-10-17T15:47:43Z"
       }
     ],
+    "17142943": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T17:21:05Z",
+        "observed_minutes": 1216,
+        "rank_when_observed": 1987,
+        "score": 0.12,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T17:21:05Z"
+      }
+    ],
     "17142982": [
       {
         "baseline": false,
@@ -143259,6 +144529,18 @@
         "score": 0.06,
         "submission_count": 1,
         "submitted_at": "2026-10-17T17:50:46Z"
+      }
+    ],
+    "17143194": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-17T18:07:16Z",
+        "observed_minutes": 1170,
+        "rank_when_observed": 1314,
+        "score": 0.15,
+        "submission_count": 1,
+        "submitted_at": "2026-10-17T18:07:16Z"
       }
     ],
     "17143803": [
@@ -143272,9 +144554,21 @@
         "submission_count": 1,
         "submitted_at": "2026-10-17T21:03:22Z"
       }
+    ],
+    "17144281": [
+      {
+        "baseline": false,
+        "first_seen_at": "2026-10-18T13:37:22.477026Z",
+        "key": "submitted:2026-10-18T01:51:34Z",
+        "observed_minutes": 705,
+        "rank_when_observed": 3115,
+        "score": 0,
+        "submission_count": 1,
+        "submitted_at": "2026-10-18T01:51:34Z"
+      }
     ]
   },
-  "last_change_observed_at": "2026-10-18T09:49:48.883362Z",
+  "last_change_observed_at": "2026-10-18T13:37:22.477026Z",
   "schema_version": 1,
   "tracking_started_at": "2026-10-01T15:45:24.000068Z"
 }
